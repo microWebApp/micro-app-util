@@ -1,2 +1,7 @@
 // Anything exported from this file is importable by other in-browser modules.
-export function publicApiFunction() {}
+import "./style/global.less"
+import "./set-public-path";
+
+export function publicApiFunction() {
+  console.log('publicApiFunction')
+}
